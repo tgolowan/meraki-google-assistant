@@ -23,19 +23,32 @@ What do you want to say? Enable guest wifi
 What do you want the Assistant to say in response? Sure, will do.
 
 Click on THAT > Webhooks > Make a web request > Fill in the fields > Create action > Finish.
+
+
+3.
 URL: Paste URL from PythonAnywhere http://USERNAME.pythonanywhere.com/enable_ssid
+
 Method: POST
+
 Content Type: text/plain
+
 Body: enable_ssid
+
 
 Now, let’s create an applet which is going to disable your wifi: Create > Click on THIS > Choose Google Assistant > Say a simple phrase > Fill out the fields > Create Trigger > Automatically brings us to “If THIS then THAT” statement,
 What do you want to say? Disable guest wifi
 What do you want the Assistant to say in response? Sure, will do.
 Click on THAT > Webhooks > Make a web request > Fill in the fields > Create action > Finish.
+
 URL: Paste URL from PythonAnywhere http://USERNAME.pythonanywhere.com/disable_ssid
+
 Method: POST
+
 Content Type: text/plain
+
 Body: disable_ssid
 
-
+3.Meraki API
+Now uyou can use flask.app.py file and copy paste it to pythonanywhere
+Put the API key , SSID Number and Network ID
 
