@@ -1,4 +1,5 @@
 ### Meraki-google-assistant adding Guest Wi-Fi
+
 #### 1.Web server with a Python script.
 
 #### 2.IFTTT Applet.
@@ -7,12 +8,14 @@
 
 
 
-1.Sign up on https://www.pythonanywhere.com/
+##### 1.Web server with a Python script.
+Sign up on https://www.pythonanywhere.com/
 Go to Web > Add a new web app > Next > Flask > Python 3.8 (Flask 1.1.1) > Next (leave everything at default) > Next
 By default, your web app is going to have the following URL USERNAME.pythonanywhere.com. Copy this URL somewhere, we are going to use it later to configure webhooks
 Scroll down to Source code: /home/USERNAME/mysite > Click Go to directory > Locate and open flask_app.py
 The flask_app.py file is going to contain the code which is going to parse the webhooks from IFTTT and send API calls to Meraki Dashboard. Let’s open it and a separate browser tab
 
+##### 2.IFTTT Applet.
 2.Sign up on https://ifttt.com with your Google account
 Connect Google Assistant service: Explore > Google Assistant > Services (Tab) > Select Google Assistant > Connect
 Connect Google Assistant service: Explore > Webhooks > Services (Tab) > Select Webhooks > Connect
@@ -24,8 +27,6 @@ What do you want the Assistant to say in response? Sure, will do.
 
 Click on THAT > Webhooks > Make a web request > Fill in the fields > Create action > Finish.
 
-
-3.
 URL: Paste URL from PythonAnywhere http://USERNAME.pythonanywhere.com/enable_ssid
 
 Method: POST
@@ -48,7 +49,7 @@ Content Type: text/plain
 
 Body: disable_ssid
 
-3.Meraki API
+##### 3.Meraki API
 
 Now you can use flask.app.py file and copy paste it to pythonanywhere
 
