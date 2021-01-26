@@ -49,6 +49,8 @@ Content Type: text/plain
 Body: disable_ssid
 
 3.Meraki API
-Now uyou can use flask.app.py file and copy paste it to pythonanywhere
+
+Now you can use flask.app.py file and copy paste it to pythonanywhere
+
 Put the API key , SSID Number and Network ID
 
