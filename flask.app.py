@@ -1,4 +1,4 @@
-# A very simple Flask Hello World app for you to get started with...
+# A very simple Flask API page
 import requests
 import json
 from flask import Flask
