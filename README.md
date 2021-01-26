@@ -1,7 +1,7 @@
 # meraki-google-assistant adding Guest Wi-Fi
-1.Web server with a Python script
-2.IFTTT Applet
-3.Meraki API
+1.Web server with a Python script.
+2.IFTTT Applet.
+3.Meraki API.
 
 
 1.Sign up on https://www.pythonanywhere.com/
@@ -15,13 +15,16 @@ Connect Google Assistant service: Explore > Google Assistant > Services (Tab) > 
 Connect Google Assistant service: Explore > Webhooks > Services (Tab) > Select Webhooks > Connect
 We will create guest SSID: one is to enable and another one to disable guest SSID
 First, let’s reate an applet which is going to enable your wifi: Create > Click on THIS > Choose Google Assistant > Say a simple phrase > Fill out the fields > Create Trigger > Automatically brings us to “If THIS then THAT” statement
+
 What do you want to say? Enable guest wifi
 What do you want the Assistant to say in response? Sure, will do.
+
 Click on THAT > Webhooks > Make a web request > Fill in the fields > Create action > Finish.
 URL: Paste URL from PythonAnywhere http://USERNAME.pythonanywhere.com/enable_ssid
 Method: POST
 Content Type: text/plain
 Body: enable_ssid
+
 Now, let’s create an applet which is going to disable your wifi: Create > Click on THIS > Choose Google Assistant > Say a simple phrase > Fill out the fields > Create Trigger > Automatically brings us to “If THIS then THAT” statement,
 What do you want to say? Disable guest wifi
 What do you want the Assistant to say in response? Sure, will do.
