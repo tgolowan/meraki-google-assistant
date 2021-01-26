@@ -1,7 +1,10 @@
 # meraki-google-assistant adding Guest Wi-Fi
 1.Web server with a Python script.
+
 2.IFTTT Applet.
+
 3.Meraki API.
+
 
 
 1.Sign up on https://www.pythonanywhere.com/
