@@ -1,11 +1,4 @@
-### Meraki-google-assistant adding Guest Wi-Fi
-
-#### 1.Web server with a Python script.
-
-#### 2.IFTTT Applet.
-
-#### 3.Meraki API.
-
+### Meraki google-assistant adding Guest Wi-Fi
 
 
 ##### 1.Web server with a Python script.
