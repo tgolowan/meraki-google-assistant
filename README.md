@@ -37,7 +37,7 @@ USERNAME.pythonanywhere.com.
    5. Connect
 >We will create guest SSID: one is to enable and another one to disable guest SSID
 
-First, let’s create an applet which is going to enable your wifi:
+>First, let’s create an applet which is going to enable your wifi:
   1. Create
   2. Click on THIS
   3. Choose Google Assistant
@@ -54,7 +54,7 @@ First, let’s create an applet which is going to enable your wifi:
 **What do you want the Assistant to say in response?**
 
   Sure, will do.
-  
+
 
   1. Click on THAT
   2. Webhooks
@@ -72,7 +72,8 @@ First, let’s create an applet which is going to enable your wifi:
 **Body:** enable_ssid
 
 
-Now, let’s create an applet which is going to disable your wifi:
+>Now, let’s create an applet which is going to disable your wifi:
+
   1. Create
   2. Click on THIS
   3. Choose Google Assistant
