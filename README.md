@@ -4,8 +4,8 @@
 ##### 1.Web server with a Python script.
 
 1. Sign up on https://www.pythonanywhere.com/
-2. Go to Web >
-3. Add a new web app >
+2. Go to Web
+3. Add a new web app
 4. Next
 5. Flask
 6. Python 3.8 (Flask 1.1.1)
@@ -14,18 +14,16 @@
 
 
 
-By default, your web app is going to have the following URL USERNAME.pythonanywhere.com. Copy this URL somewhere, we are going to use it later to configure webhooks
-Scroll down to Source code: /home/USERNAME/mysite > Click Go to directory >
+By default, your web app is going to have the following URL:
+USERNAME.pythonanywhere.com.
 
-![](https://github.com/tgolowan/meraki-google-assistant/blob/main/images/pythonanywhere-directory.png)
+1. Copy this URL somewhere, we are going to use it later to configure webhooks
+2. Scroll down to Source code
+3. /home/USERNAME/mysite
+4. Click Go to directory
+5. Locate and open flask_app.py
 
-
-Locate and open flask_app.py
-
-![](https://github.com/tgolowan/meraki-google-assistant/blob/main/images/pythonanywhere-flask.png)
-
-
-The flask_app.py file is going to contain the code which is going to parse the webhooks from IFTTT and send API calls to Meraki Dashboard. Let’s open it and a separate browser tab and copy from flask.app.py from github repository
+>The flask_app.py file is going to contain the code which is going to parse the webhooks from IFTTT and send API calls to Meraki Dashboard. Let’s open it and a separate browser tab and copy from flask.app.py from github repository
 
 ##### 2.IFTTT Applet.
 
