@@ -3,8 +3,12 @@
 
 ##### 1.Web server with a Python script.
 Sign up on https://www.pythonanywhere.com/
-![](https://github.com/tgolowan/meraki-google-assistant/blob/main/images/Screenshot%202021-02-03%20at%2012.25.06%20PM.png)
-Go to Web > Add a new web app > Next > Flask > Python 3.8 (Flask 1.1.1) > Next (leave everything at default) > Next
+![](https://github.com/tgolowan/meraki-google-assistant/blob/main/images/pythonannywhere-web.png)
+
+Go to Web >
+![](https://github.com/tgolowan/meraki-google-assistant/blob/main/images/Pythonanywhere-addwebapp.25.09%20PM.png)
+
+Add a new web app > Next > Flask > Python 3.8 (Flask 1.1.1) > Next (leave everything at default) > Next
 By default, your web app is going to have the following URL USERNAME.pythonanywhere.com. Copy this URL somewhere, we are going to use it later to configure webhooks
 Scroll down to Source code: /home/USERNAME/mysite > Click Go to directory > Locate and open flask_app.py
 The flask_app.py file is going to contain the code which is going to parse the webhooks from IFTTT and send API calls to Meraki Dashboard. Let’s open it and a separate browser tab
@@ -48,4 +52,3 @@ Body: disable_ssid
 Now you can use flask.app.py file and copy paste it to pythonanywhere
 
 Put the API key , SSID Number and Network ID
-
