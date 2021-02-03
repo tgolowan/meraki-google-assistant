@@ -48,9 +48,13 @@ First, let’s create an applet which is going to enable your wifi:
   Automatically brings us to “If THIS then THAT” statement
 
 **What do you want to say?**
+
   Enable guest wifi
+
 **What do you want the Assistant to say in response?**
+
   Sure, will do.
+  
 
   1. Click on THAT
   2. Webhooks
@@ -79,9 +83,13 @@ Now, let’s create an applet which is going to disable your wifi:
   Automatically brings us to “If THIS then THAT” statement,
 
 **What do you want to say?**
+
   Disable guest wifi
+
 **What do you want the Assistant to say in response?**
+
   Sure, will do.
+
 
   1. Click on THAT
   2. Webhooks
