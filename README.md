@@ -2,18 +2,15 @@
 
 
 ##### 1.Web server with a Python script.
-Sign up on https://www.pythonanywhere.com/
 
-
-Go to Web >
-![](https://github.com/tgolowan/meraki-google-assistant/blob/main/images/pythonannywhere-web.png)
-
-Add a new web app >
-
-
-![](https://github.com/tgolowan/meraki-google-assistant/blob/main/images/Pythonanywhere-addwebapp.25.09%20PM.png)
-
-Next > Flask > Python 3.8 (Flask 1.1.1) > Next (leave everything at default) > Next
+1. Sign up on https://www.pythonanywhere.com/
+2. Go to Web >
+3. Add a new web app >
+4. Next
+5. Flask
+6. Python 3.8 (Flask 1.1.1)
+7. Next (leave everything at default)
+8. Next
 
 
 
