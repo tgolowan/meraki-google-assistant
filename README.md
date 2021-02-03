@@ -1,7 +1,7 @@
-### Meraki google-assistant adding Guest Wi-Fi
+## Meraki google-assistant adding Guest Wi-Fi
 
 
-##### 1.Web server with a Python script.
+### 1.Web server with a Python script.
 
 1. Sign up on https://www.pythonanywhere.com/
 2. Go to Web
@@ -25,44 +25,80 @@ USERNAME.pythonanywhere.com.
 
 >The flask_app.py file is going to contain the code which is going to parse the webhooks from IFTTT and send API calls to Meraki Dashboard. Let’s open it and a separate browser tab and copy from flask.app.py from github repository
 
-##### 2.IFTTT Applet.
+### 2.IFTTT Applet.
 
 2.Sign up on https://ifttt.com with your Google account
 
+  Connect Google Assistant service:
+   1. Explore
+   2. Google Assistant
+   3. Services (Tab)
+   4. Select Google Assistant
+   5. Connect
+>We will create guest SSID: one is to enable and another one to disable guest SSID
 
-Connect Google Assistant service: Explore > Google Assistant > Services (Tab) > Select Google Assistant > Connect
-Connect Google Assistant service: Explore > Webhooks > Services (Tab) > Select Webhooks > Connect
-We will create guest SSID: one is to enable and another one to disable guest SSID
-First, let’s reate an applet which is going to enable your wifi: Create > Click on THIS > Choose Google Assistant > Say a simple phrase > Fill out the fields > Create Trigger > Automatically brings us to “If THIS then THAT” statement
+First, let’s create an applet which is going to enable your wifi:
+  1. Create
+  2. Click on THIS
+  3. Choose Google Assistant
+  4. Say a simple phrase
+  5. Fill out the fields
+  6. Create Trigger
 
-What do you want to say? Enable guest wifi
-What do you want the Assistant to say in response? Sure, will do.
+  Automatically brings us to “If THIS then THAT” statement
 
-Click on THAT > Webhooks > Make a web request > Fill in the fields > Create action > Finish.
+What do you want to say?
+  Enable guest wifi
+What do you want the Assistant to say in response?
+  Sure, will do.
 
-URL: Paste URL from PythonAnywhere http://USERNAME.pythonanywhere.com/enable_ssid
+  1. Click on THAT
+  2. Webhooks
+  3. Make a web request
+  4. Fill in the fields
+  5. Create action
+  6. Finish.
 
-Method: POST
+**URL:** Paste URL from PythonAnywhere http://USERNAME.pythonanywhere.com/enable_ssid
 
-Content Type: text/plain
+**Method:** POST
 
-Body: enable_ssid
+**Content Type:** text/plain
+
+**Body:** enable_ssid
 
 
-Now, let’s create an applet which is going to disable your wifi: Create > Click on THIS > Choose Google Assistant > Say a simple phrase > Fill out the fields > Create Trigger > Automatically brings us to “If THIS then THAT” statement,
-What do you want to say? Disable guest wifi
-What do you want the Assistant to say in response? Sure, will do.
-Click on THAT > Webhooks > Make a web request > Fill in the fields > Create action > Finish.
+Now, let’s create an applet which is going to disable your wifi:
+  1. Create
+  2. Click on THIS
+  3. Choose Google Assistant
+  4. Say a simple phrase
+  5. Fill out the fields
+  6. Create Trigger
 
-URL: Paste URL from PythonAnywhere http://USERNAME.pythonanywhere.com/disable_ssid
+  Automatically brings us to “If THIS then THAT” statement,
 
-Method: POST
+What do you want to say?
+  Disable guest wifi
+What do you want the Assistant to say in response?
+  Sure, will do.
 
-Content Type: text/plain
+  1. Click on THAT
+  2. Webhooks
+  3. Make a web request
+  4. Fill in the fields
+  5. Create action
+  6. Finish.
 
-Body: disable_ssid
+**URL:** Paste URL from PythonAnywhere http://USERNAME.pythonanywhere.com/disable_ssid
 
-##### 3.Meraki API
+**Method:** POST
+
+**Content Type:** text/plain
+
+**Body:** disable_ssid
+
+### 3.Meraki API
 
 Now you can use flask.app.py file and copy paste it to pythonanywhere
 
