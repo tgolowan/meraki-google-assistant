@@ -24,6 +24,10 @@ Scroll down to Source code: /home/USERNAME/mysite > Click Go to directory >
 
 
 Locate and open flask_app.py
+
+![](https://github.com/tgolowan/meraki-google-assistant/blob/main/images/pythonanywhere-flask.png)
+
+
 The flask_app.py file is going to contain the code which is going to parse the webhooks from IFTTT and send API calls to Meraki Dashboard. Let’s open it and a separate browser tab
 
 ##### 2.IFTTT Applet.
