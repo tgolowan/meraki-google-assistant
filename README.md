@@ -3,6 +3,7 @@
 
 ##### 1.Web server with a Python script.
 Sign up on https://www.pythonanywhere.com/
+![](https://github.com/tgolowan/meraki-google-assistant/blob/main/images/Screenshot%202021-02-03%20at%2012.25.06%20PM.png)
 Go to Web > Add a new web app > Next > Flask > Python 3.8 (Flask 1.1.1) > Next (leave everything at default) > Next
 By default, your web app is going to have the following URL USERNAME.pythonanywhere.com. Copy this URL somewhere, we are going to use it later to configure webhooks
 Scroll down to Source code: /home/USERNAME/mysite > Click Go to directory > Locate and open flask_app.py
