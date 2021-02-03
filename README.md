@@ -28,11 +28,13 @@ Locate and open flask_app.py
 ![](https://github.com/tgolowan/meraki-google-assistant/blob/main/images/pythonanywhere-flask.png)
 
 
-The flask_app.py file is going to contain the code which is going to parse the webhooks from IFTTT and send API calls to Meraki Dashboard. Let’s open it and a separate browser tab
+The flask_app.py file is going to contain the code which is going to parse the webhooks from IFTTT and send API calls to Meraki Dashboard. Let’s open it and a separate browser tab and copy from flask.app.py from github repository
 
 ##### 2.IFTTT Applet.
 
 2.Sign up on https://ifttt.com with your Google account
+
+
 Connect Google Assistant service: Explore > Google Assistant > Services (Tab) > Select Google Assistant > Connect
 Connect Google Assistant service: Explore > Webhooks > Services (Tab) > Select Webhooks > Connect
 We will create guest SSID: one is to enable and another one to disable guest SSID
